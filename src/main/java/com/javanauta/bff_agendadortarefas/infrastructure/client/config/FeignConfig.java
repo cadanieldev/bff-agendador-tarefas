@@ -1,0 +1,14 @@
+package com.javanauta.bff_agendadortarefas.infrastructure.client.config;
+
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class FeignConfig {
+
+    @Bean // classe de configuração
+    public FeignError feignError(){
+        return new FeignError();
+    }
+}
